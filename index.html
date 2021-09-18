@@ -13,12 +13,31 @@
       background-color: rgb(247, 204, 222);
     }
  
-body {
+    body {
   background-color: rgb(250, 237, 244);
 
+
+}
+table, th, td {
+  border: 2px solid rgb(250, 237, 244);
+  border-collapse:collapse;
+  color: rgb(153, 150, 150);
+ 
+}
+th, td {
+  text-align:center;
+  background-color:rgb(247, 204, 222);
 }
 
-   
+button {
+    border: none;
+    color: rgb(167, 54, 106);
+    padding: 10px 28px;
+    text-align: center;
+    display: inline-block;
+    background-color: #c4bdc0;
+
+}
     </style>
 
 <body>
@@ -34,7 +53,9 @@ body {
     </p>
 </h4>
 
-
+<h4>
+    <button type="button" onclick="alert('Nevermind')">Surprise Button</button>
+</h4>
 <div>
 “The masses never revolt of their own accord, and they never revolt merely because they are oppressed. Indeed, so long as they are not permitted to have standards of comparison, they never even become aware that they are oppressed.” </div>
 
@@ -44,8 +65,18 @@ body {
         <li>Iced Coffee</li>
         <li>Turkish Coffee</li>
         <li>Iced Tea</li>
- 
-      </ul>
+    </ul>
+
+   <p>What's yours favourite drink? </p> 
+
+    <form>
+<input type="radio" id="iced coffee" name="fav_drink" value="Iced Coffee">
+<label for="iced coffee">Iced Coffee</label><br>
+<input type="radio" id="tuskish coffee" name="fav_drink" value="Turkish Coffee">
+<label for="turkish coffee">Turkish Coffee</label><br>
+<input type="radio" id="iced tea" name="fav_drink" value="Iced Tea">
+<label for="iced tea">Iced Tea</label><br>
+    </form>
 
       <img src="coffee.jpg" alt="Coffee" width="350" height="250">
       <a href="https://www.healthline.com/nutrition/top-13-evidence-based-health-benefits-of-coffee">Benefits of Coffee</a>
@@ -55,6 +86,31 @@ body {
     <img src="beans.jpg" style="width: 250px;px;height:150px;">
 
     </a>
+
+    <table style="width:50%">
+
+<tr>
+    <th>Person 1</th>
+    <th>Person 2</th>
+    <th>Person 3</th>
+    <th>Person 4</th>
+</tr>
+
+<tr>
+    <th>Cortado</th>
+    <th>Espresso</th>
+    <th>Americano</th>
+    <th>Frappe</th>
+</tr>
+
+<tr>
+    <th>Spain</th>
+    <th>Italy</th>
+    <th>America</th>
+    <th>Greece</th>
+</tr>
+
+    </table>
 </h5>
 
 <h6>
@@ -65,5 +121,6 @@ body {
         <li>London</li>
       </ol>
 </h6>
+
 </body>
 </html>
